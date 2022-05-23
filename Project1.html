@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>linkedin clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="linkedinHeader">
+      <div class="left-nav">
+        <!-- logo -->
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            class="linkedinLogoSVG"
+          >
+            <title>LinkedIn</title>
+
+            <g>
+              <path
+                d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
+                fill="currentColor"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <!-- logo ends here -->
+
+        <!-- search bar -->
+        <div id="wholeSearchbar">
+          <!-- <i class="material-icons">Search</i> -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchbar" />
+        </div>
+
+        <!-- end search bar -->
+      </div>
+      <div class="right-nav">
+        <div class="tab-items">
+          <div class="tab-item">
+            <i class="fa-solid fa-house-chimney"></i>
+            <h3>Home</h3>
+          </div>
+          <div class="tab-item">
+            <i class="fa-solid fa-user-group"></i>
+            <h3>My Network</h3>
+          </div>
+          <div class="tab-item">
+            <i class="fa-solid fa-suitcase"></i>
+            <h3>Jobs</h3>
+          </div>
+          <div class="tab-item">
+            <i class="fa-solid fa-comment-dots"></i>
+            <h3>Messaging</h3>
+          </div>
+          <div class="tab-item">
+            <i class="fa-solid fa-bell"></i>
+            <h3>Notifications</h3>
+          </div>
+          <div class="tab-item">
+            <i class="fa-solid fa-circle-user"></i>
+            <h3>Me</h3>
+          </div>
+        </div>
+
+        <div class="menu">
+          <i class="material-icons">apps</i>
+          <h3>Work</h3>
+        </div>
+        <div class="Premium-msg">Try Premium for free</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="body_main">
+        <!-- sidebar starts -->
+        <div class="sidebar">
+          <div class="sidebar_top">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAZiDugxvHYbgy20RP6yOnjQG240R7WtThOg&usqp=CAU"
+              alt=""
+            />
+            <i class="fa-solid fa-circle-user"></i>
+            <h3>Aditi Mandal</h3>
+          </div>
+          <div class="sidebar_stats">
+            <!--has 4 divisions-->
+            <div class="sidebar_stat">
+              <p>Connections</p>
+              <!-- <p>Find alumni and classmates</p> -->
+              <div class="sidebar_stat_number">45</div>
+            </div>
+            <div class="sidebar_stat">
+              <p class="viewprofile">Who viewed your profile</p>
+              <div class="sidebar_stat_number">29</div>
+            </div>
+            <div class="sidebar_stat">
+              <!-- <p>Access exclusive tools & insights</p> -->
+
+              <p>Try Premium for free</p>
+            </div>
+            <div id="me" class="sidebar_stat">
+              <i class="material-icons">bookmark</i>
+              <p>My items</p>
+            </div>
+          </div>
+          <div class="sidebar_botton">
+            <div class="ee">
+              <p>Groups</p>
+            </div>
+            <div class="events ee">
+              <p>Events</p>
+              <i class="material-icons">add</i>
+            </div>
+            <div class="ee">
+              <p>Followed Hashtags</p>
+            </div>
+            <div class="discover">
+              <p>Discover more</p>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar ends -->
+
+        <!-- feed starts -->
+        <div class="container_feed_post">
+        <div class="feed ">
+          <div class="feed_inputContainer">
+            <div class="feed_inputbox">
+              <div class="userlogo">
+                <i class="fa-solid fa-circle-user"></i>
+              </div>
+              <div class="feed_input">
+                <textarea class="textarea-cont" placeholder="Start a Post"></textarea>
+                <form>
+                  <!-- <input id="hlo"   placeholder="Start a post" /> -->
+                  <!-- <button>Send</button> -->
+                </form>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="feed_inputOptions">
+            <div class="feed_option">
+              <i class="material-icons  pic">image</i>
+              <h3>Photo</h3>
+            </div>
+            <div class="feed_option">
+              <i class="material-icons  ved">smart_display</i>
+              <h3>Video</h3>
+            </div>
+            <div class="feed_option">
+              <i class="material-icons  cal">calendar_today</i>
+              <h3>Event</h3>
+            </div>
+            <div class="feed_option">
+              <i class="material-icons  article">today</i>
+              <h3>Write article</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- posts starts -->
+        <div class="post ">
+            <div class="post_header">
+              <i class="fa-solid fa-circle-user" id="lg"></i>
+                <div class="post_info">
+                    <h2 class="name">Aditi Mandal</h2>
+                    <p>Job Description</p>
+                </div> 
+            </div>
+            <div class="post_body">
+              <p>Message Here</p>
+            </div>
+            <div class="feed_inputOptions">
+              <div class="inputOption">
+                <i style="color:gray" class="material-icons">thumb_up</i>
+                <h4>Like</h4>
+
+              </div>
+              <div class="inputOption">
+                <i style="color:gray"  class="material-icons">comment</i>
+                <h4>Comment</h4>
+
+              </div>
+              <div class="inputOption">
+                <i style="color:gray"  class="material-icons">share</i>
+                <h4>Share</h4>
+
+              </div>
+              <div class="inputOption">
+                <i style="color:gray"  class="material-icons">send</i>
+                <h4>Send</h4>
+
+              </div>
+            </div>
+        </div>
+        <!-- post ends here -->
+
+
+        <!-- posts starts -->
+        <div class="post ">
+          <div class="post_header">
+            <i class="fa-solid fa-circle-user" id="lg"></i>
+              <div class="post_info">
+                  <h2 class="name">Aditi Mandal</h2>
+                  <p>Job Description</p>
+              </div> 
+          </div>
+          <div class="post_body">
+            <p>Message Here</p>
+          </div>
+          <div class="feed_inputOptions">
+            <div class="inputOption">
+              <i style="color:gray" class="material-icons">thumb_up</i>
+              <h4>Like</h4>
+
+            </div>
+            <div class="inputOption">
+              <i style="color:gray"  class="material-icons">comment</i>
+              <h4>Comment</h4>
+
+            </div>
+            <div class="inputOption">
+              <i style="color:gray"  class="material-icons">share</i>
+              <h4>Share</h4>
+
+            </div>
+            <div class="inputOption">
+              <i style="color:gray"  class="material-icons">send</i>
+              <h4>Send</h4>
+
+            </div>
+          </div>
+      </div>
+      <!-- post ends here -->
+
+
+
+      <!-- posts starts -->
+      <div class="post ">
+        <div class="post_header">
+          <i class="fa-solid fa-circle-user" id="lg"></i>
+            <div class="post_info">
+                <h2 class="name">Aditi Mandal</h2>
+                <p>Job Description</p>
+            </div> 
+        </div>
+        <div class="post_body">
+          <p>Message Here</p>
+        </div>
+        <div class="feed_inputOptions">
+          <div class="inputOption">
+            <i style="color:gray" class="material-icons">thumb_up</i>
+            <h4>Like</h4>
+
+          </div>
+          <div class="inputOption">
+            <i style="color:gray"  class="material-icons">comment</i>
+            <h4>Comment</h4>
+
+          </div>
+          <div class="inputOption">
+            <i style="color:gray"  class="material-icons">share</i>
+            <h4>Share</h4>
+
+          </div>
+          <div class="inputOption">
+            <i style="color:gray"  class="material-icons">send</i>
+            <h4>Send</h4>
+
+          </div>
+        </div>
+    </div>
+    <!-- post ends here -->
+
+
+    <!-- posts starts -->
+    <div class="post ">
+      <div class="post_header">
+        <i class="fa-solid fa-circle-user" id="lg"></i>
+          <div class="post_info">
+              <h2 class="name">Aditi Mandal</h2>
+              <p>Job Description</p>
+          </div> 
+      </div>
+      <div class="post_body">
+        <p>Message Here</p>
+      </div>
+      <div class="feed_inputOptions">
+        <div class="inputOption">
+          <i style="color:gray" class="material-icons">thumb_up</i>
+          <h4>Like</h4>
+
+        </div>
+        <div class="inputOption">
+          <i style="color:gray"  class="material-icons">comment</i>
+          <h4>Comment</h4>
+
+        </div>
+        <div class="inputOption">
+          <i style="color:gray"  class="material-icons">share</i>
+          <h4>Share</h4>
+
+        </div>
+        <div class="inputOption">
+          <i style="color:gray"  class="material-icons">send</i>
+          <h4>Send</h4>
+
+        </div>
+      </div>
+    </div>
+    <!-- post ends here -->
+        
+      </div>
+        
+
+        <!-- feed ends -->
+
+        <!-- Widgets Starts -->
+         <div class="widgets">
+          <div class="widgets_header">
+            <h2>LinkedIn UI Clone</h2>
+            <i class="material-icons">info</i>
+          </div>
+
+          <div class="widgets__article">
+            <div class="widgets_articleLeft">
+              <i class="material-icons">fiber_manual_record</i>
+            </div>
+            <div class="widgets_articleRight">
+              <h4>Coding LinkedIn UI Clone</h4>
+              <p>Top news-4500 readers</p>
+            </div>
+          </div>
+
+          <div class="widgets__article">
+            <div class="widgets_articleLeft">
+              <i class="material-icons">fiber_manual_record</i>
+            </div>
+            <div class="widgets_articleRight">
+              <h4>Coding LinkedIn UI Clone</h4>
+              <p>Top news-4500 readers</p>
+            </div>
+          </div>
+
+          <div class="widgets__article">
+            <div class="widgets_articleLeft">
+              <i class="material-icons">fiber_manual_record</i>
+            </div>
+            <div class="widgets_articleRight">
+              <h4>Coding LinkedIn UI Clone</h4>
+              <p>Top news-4500 readers</p>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- widgets ends here --> 
+      </div>
+    </main>
+  </body>
+</html>
